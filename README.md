@@ -1,3 +1,5 @@
+[![Deploy](https://button.deta.dev/1/svg)](https://web.deta.sh/deploy?path=https://github.com/rabilrbl/deta-remix)
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
