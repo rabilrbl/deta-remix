@@ -1,0 +1,12 @@
+{
+    "name": "Deta Remix",
+    "description": "Remix Deployment in Deta", 
+    "runtime": "node",
+    "env": [
+        {
+            "key": "DETA_PROJECT_KEY",
+            "description": "Your deta project key",
+            "required": true
+        }
+    ]
+}

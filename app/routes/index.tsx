@@ -2,7 +2,7 @@ import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { Deta } from "deta";
 
-const deta = Deta("Your Deta Key");
+const deta = Deta(process.env.DETA_PROJECT_KEY);
 
 const db = deta.Base("deta-remix");
 
