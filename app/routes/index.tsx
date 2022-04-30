@@ -2,7 +2,7 @@ import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { Deta } from "deta";
 
-const deta = Deta();
+const deta = Deta("Your Deta Key");
 
 const db = deta.Base("deta-remix");
 
@@ -38,7 +38,11 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <p>Fun fact: this app can also function without JavaScript</p>
       <div>
-        {res.items.map((d: any) => {
+        {res.items.map((d: {
+          key: string;
+          name: string;
+          message: string;
+        }) => {
           return (
             <div
               key={d.key}
