@@ -1,12 +1,5 @@
 {
     "name": "Deta Remix",
-    "description": "Remix Deployment in Deta", 
-    "runtime": "node",
-    "env": [
-        {
-            "key": "DETA_PROJECT_KEY",
-            "description": "Your deta project key",
-            "required": true
-        }
-    ]
+    "description": "Remix Deployment in Deta. To deploy the app add your project key in routes/index.tsx", 
+    "runtime": "node"
 }
